@@ -9,3 +9,6 @@ This plugin fix the bug that the IDE does not display Form Designer Option page 
 # Uninstallation
 1. Choose "Component > Install Packages" from main menu
 2. Uninstall "restoreformdesigneropt.bpl" package
+
+# Misc.
+Delphinus-Support
