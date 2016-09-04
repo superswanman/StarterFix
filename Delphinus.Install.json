@@ -1,0 +1,18 @@
+{
+    "source_folders":
+    [
+        {
+            "folder": "src",
+            "base": "",
+            "recursive": false,
+            "filter": "*;*.*"
+        }
+    ],
+    "projects":
+    [
+        {
+            "project": "src\\restoreformdesigneropt.dproj",
+            "compiler_min": 29
+        }
+    ]
+}
