@@ -10,7 +10,10 @@ procedure Register;
 implementation
 
 const
-  VclIde240 = 'vclide240.bpl';
+  VclIde = {$IFDEF VER290}'vclide220.bpl'{$ENDIF}
+           {$IFDEF VER300}'vclide230.bpl'{$ENDIF}
+           {$IFDEF VER310}'vclide240.bpl'{$ENDIF}
+           ;
   RegisterProcName = '@Idepropsheet@RegisterPropertySheetClass$qqrp17System@TMetaClass';
   UnregisterProcName = '@Idepropsheet@UnregisterPropertySheetClass$qqrp17System@TMetaClass';
   TargetQualifiedClassName = 'DesignerOptPage.TDesignerOptionsPage';
@@ -28,7 +31,7 @@ begin
   if typ = nil then Exit;
   TDesignerOptionsPageClass := TRttiInstanceType(typ).MetaclassType;
 
-  @proc := GetProcAddress(GetModuleHandle(VclIde240), RegisterProcName);
+  @proc := GetProcAddress(GetModuleHandle(VclIde), RegisterProcName);
   if @proc = nil then Exit;
 
   proc(TDesignerOptionsPageClass);
@@ -40,7 +43,7 @@ var
 begin
   if TDesignerOptionsPageClass = nil then Exit;
 
-  @proc := GetProcAddress(GetModuleHandle(VclIde240), UnregisterProcName);
+  @proc := GetProcAddress(GetModuleHandle(VclIde), UnregisterProcName);
   if @proc = nil then Exit;
   proc(TDesignerOptionsPageClass);
 end;
