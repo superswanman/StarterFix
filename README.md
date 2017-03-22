@@ -11,7 +11,7 @@ This plugin fixes the bug that does not display Form Designer Options page in RA
 2. Uninstall "restoreformdesigneropt.bpl" package
 
 # Supported versions
-XE8 - 10.1 Berlin
+XE8 - 10.2 Tokyo
 
 # Misc.
 Delphinus-Support
