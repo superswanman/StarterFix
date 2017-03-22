@@ -10,9 +10,10 @@ procedure Register;
 implementation
 
 const
-  VclIde = {$IFDEF VER290}'vclide220.bpl'{$ENDIF}
-           {$IFDEF VER300}'vclide230.bpl'{$ENDIF}
-           {$IFDEF VER310}'vclide240.bpl'{$ENDIF}
+  VclIde = {$IFDEF VER290}'vclide220.bpl'{$ENDIF} // XE8
+           {$IFDEF VER300}'vclide230.bpl'{$ENDIF} // 10 Seattle
+           {$IFDEF VER310}'vclide240.bpl'{$ENDIF} // 10.1 Berlin
+           {$IFDEF VER320}'vclide250.bpl'{$ENDIF} // 10.2 Tokyo
            ;
   RegisterProcName = '@Idepropsheet@RegisterPropertySheetClass$qqrp17System@TMetaClass';
   UnregisterProcName = '@Idepropsheet@UnregisterPropertySheetClass$qqrp17System@TMetaClass';
