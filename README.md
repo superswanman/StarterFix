@@ -1,5 +1,5 @@
 # Restore Form Designer Option for Starter Edition
-This plugin fix the bug that the IDE does not display Form Designer Option page in RAD Studio Starter edition.
+This plugin fixes the bug that does not display Form Designer Options page in RAD Studio Starter edition.
 
 # Installation
 1. Open "src\restoreformdesigneropt.dproj"
@@ -9,6 +9,9 @@ This plugin fix the bug that the IDE does not display Form Designer Option page 
 # Uninstallation
 1. Choose "Component > Install Packages" from main menu
 2. Uninstall "restoreformdesigneropt.bpl" package
+
+# Supported versions
+XE8 - 10.1 Berlin
 
 # Misc.
 Delphinus-Support
